@@ -1,0 +1,85 @@
+:root {
+  --background-color: #181818;
+  --surface-color: #242424;
+  --text-color: #FFFFFF;
+  --accent-color: #ff6b35; /* vibrant orange */
+  --accent-light: #ff8c61;
+  --error-color: #ff6b6b;
+  --success-color: #4caf50;
+  --border-color: rgba(255, 255, 255, 0.1);
+  --code-color: #a8d5ff;
+  
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: var(--text-color);
+  background-color: var(--background-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--background-color);
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Base layout for the App */
+.app-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.dashboard {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Removing default Vite styles that might clash */
+a {
+  font-weight: 500;
+  color: var(--accent-light);
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  font-family: inherit;
+}

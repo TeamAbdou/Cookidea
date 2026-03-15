@@ -1,0 +1,22 @@
+{
+  "status": "commited",
+  "type": "frontend",
+  "scope": "codebase",
+  "localEndpoint": "http://localhost:4173",
+  "loginUser": "test@me.com",
+  "loginPassword": "123456",
+  "executionArgs": {
+    "projectName": "Cookidea",
+    "projectPath": "c:\\Users\\DZ LAPTOPS\\Desktop\\Cookidea",
+    "testIds": [
+      "TC001"
+    ],
+    "additionalInstruction": "Follow the test plan closely. Check for the error message when no image is uploaded.",
+    "serverMode": "production",
+    "envs": {
+      "API_KEY": "sk-user-iiS0ZjOPI6uk8PVWa3qQjYaRfSBG7U6IcClezZ5fAZsYXZvhKqRwdMtZejoBoAABSDMZXGTeLqSgp_8tOHzOBBqqzYfpEG0Od8v7Afp7ZGcfNS_Lu3ZMcpH8pVAr6VVizpU"
+    }
+  },
+  "serverPort": 60671,
+  "proxy": "http://899027ec-b47e-4d42-914e-d4d020f723e0:6DLrsaFZinRGFvdG94C6WDUdMT7piLuu@tun.testsprite.com:8080"
+}

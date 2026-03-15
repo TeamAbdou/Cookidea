@@ -1,0 +1,62 @@
+.actionBar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.dropdown {
+    background-color: var(--surface-color);
+    color: var(--text-color);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    min-width: 200px;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.2s;
+    /* Appearance reset for custom arrow could go here */
+}
+
+.dropdown:focus,
+.dropdown:hover:not(:disabled) {
+    border-color: var(--accent-color);
+}
+
+.dropdown:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.button {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover:not(:disabled) {
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 12px rgba(255, 107, 53, 0.2);
+}
+
+.button:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.button:disabled {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.3);
+    cursor: not-allowed;
+    box-shadow: none;
+}

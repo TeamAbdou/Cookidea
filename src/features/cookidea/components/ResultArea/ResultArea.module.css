@@ -1,0 +1,105 @@
+.container {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem;
+    min-height: 400px;
+    max-height: 70vh;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+}
+
+/* Custom Scrollbar for Dark Theme */
+.container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-color);
+}
+
+.empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.4);
+    font-style: italic;
+}
+
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--error-color);
+    font-weight: 500;
+}
+
+/* Markdown Specific Styles */
+.markdownContent {
+    color: var(--text-color);
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+.markdownContent h1,
+.markdownContent h2,
+.markdownContent h3 {
+    color: var(--text-color);
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.markdownContent h1 {
+    font-size: 2rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+.markdownContent h2 {
+    font-size: 1.5rem;
+}
+
+.markdownContent ul,
+.markdownContent ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.markdownContent li {
+    margin-bottom: 0.5rem;
+}
+
+.markdownContent strong {
+    color: var(--accent-light);
+}
+
+.markdownContent blockquote {
+    border-left: 4px solid var(--accent-color);
+    margin: 1.5rem 0;
+    padding: 0.5rem 1rem;
+    background-color: rgba(255, 255, 255, 0.02);
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.markdownContent code {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.9em;
+    color: var(--code-color);
+}

@@ -1,0 +1,33 @@
+version: "2"
+type: frontend
+tech_stack:
+  - TypeScript
+  - React
+  - Vite
+  - CSS Modules
+  - Google Generative AI
+routes:
+  - path: /
+    file: src/App.tsx
+    auth_required: false
+    description: Main dashboard for recipe generation
+features:
+  - name: Recipe Generation
+    description: Generates a recipe based on an uploaded image (ingredients) and a selected country/style.
+    files:
+      - src/App.tsx
+      - src/features/cookidea/hooks/useRecipeGeneration.ts
+      - src/features/cookidea/services/gemini.service.ts
+      - src/features/cookidea/components/ActionBar/ActionBar.tsx
+      - src/features/cookidea/components/RecipeDropzone/RecipeDropzone.tsx
+      - src/features/cookidea/components/ResultArea/ResultArea.tsx
+    entry_route: /
+    user_interactions:
+      - Click on the upload zone or drag and drop an image of ingredients
+      - Select a culinary style/country from the dropdown menu
+      - Click the "Generate Recipe" button
+    api_calls:
+      - method: POST
+        endpoint: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent
+    auth_required: false
+known_limitations: []

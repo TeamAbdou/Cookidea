@@ -1,0 +1,27 @@
+[
+  {
+    "id": "TC001",
+    "title": "Validate error when generating without uploading an image",
+    "description": "Verifies the app blocks recipe generation and shows a validation error when no image is provided.",
+    "category": "Recipe Generation",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the \"Generate Recipe\" button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Please upload\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"image\" is visible"
+      }
+    ]
+  }
+]
